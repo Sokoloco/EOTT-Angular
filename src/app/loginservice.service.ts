@@ -1,25 +1,23 @@
-import { Injectable } from '@angular/core';  
-import {HttpClient} from '@angular/common/http';  
-import {HttpHeaders} from '@angular/common/http';  
-import { from, Observable } from 'rxjs';  
-import { LoginComponent } from "./login/login.component";  
-@Injectable({  
-  providedIn: 'root'  
-})  
-export class LoginService {  
-  Url :string;  
-  token : string;  
-  header : any;  
-  constructor(private http : HttpClient) {   
-  
-    this.Url = 'http://localhost:55552/api/Login/';  
-  
-    const headerSettings: {[name: string]: string | string[]; } = {};  
-    this.header = new HttpHeaders(headerSettings);  
-  }  
-  Login(model : any){  
-    debugger;  
-     var a =this.Url+'UserLogin';  
-   return this.http.post<any>(this.Url+'UserLogin',model,{ headers: this.header});  
+import { Injectable } from '@angular/core';
+import {HttpClient,HttpHeaders} from '@angular/common/http';
+import { AngularWaitBarrier } from 'blocking-proxy/built/lib/angular_wait_barrier';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class LoginserviceService {
+
+  rootURL = "http://localhost:55552";
+
+  constructor(private httpClient : HttpClient) {}
+
+   userAuth(username, password){
+     var data = "username="+username+"&password="+password+"&grant_type=password";
+     var reqHeader = new HttpHeaders({'Content-Type': 'application/x-www-urlencoded'})
+     return this.httpClient.post(this.rootURL+'/token',data,{headers : reqHeader});
+   }
+
+   getUserType(username,password){
+     return this.httpClient.get(this.rootURL+'/api/GetUserType?userName='+username+'&password='+password);
   }
-}  
+}
