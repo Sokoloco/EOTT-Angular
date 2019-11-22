@@ -1,3 +1,26 @@
-<p>
-  quejas works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 mx-auto">
+      <div class="md-form">
+        <input type="text" [(ngModel)]="searchText" class="form-control" id="search" mdbInput>
+        <label for="search">Search</label>
+      </div>
+    </div>
+  </div>
+  <table mdbTable class="z-depth-1">
+    <thead>
+    <tr>
+      <th *ngFor="let head of headElements; let i = index" scope="col">{{head}}
+      </th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let el of elements; let i = index" [attr.data-index] = "i">
+        <th scope="row">{{el.user}}</th>
+        <td>{{el.date}}</td>
+        <td>{{el.comm}}</td>
+        <td>{{el.stars}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

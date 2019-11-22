@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NgxGaugeModule } from 'ngx-gauge';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { FormsModule,ReactiveFormsModule }from'@angular/forms';
 import {HttpClientModule}from'@angular/common/Http';
@@ -38,7 +39,8 @@ import { appRoutes } from './routes';
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
-    NgxGaugeModule
+    NgxGaugeModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent],

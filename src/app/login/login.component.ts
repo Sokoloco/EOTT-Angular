@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { LoginserviceService } from '../loginservice.service';
 import { HttpErrorResponse, HttpHeaders} from '@angular/common/http';
 import { Router } from '@angular/router';
-import { Role } from '../_models/role';
-import { User } from '../_models/users';
 
 @Component({
   selector: 'app-login',

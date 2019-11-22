@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MdbTableDirective, MdbTablePaginationComponent, MdbTableService } from 'mdbootstrap';
 
 @Component({
   selector: 'app-root',
