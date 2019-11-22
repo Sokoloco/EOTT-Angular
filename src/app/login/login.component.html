@@ -1,20 +1,45 @@
-<div *ngIf="isLoginError" class="red-text center error-message">
-Contraseña o Usuario incorecto.
+<html>
+    
+<body>
+        
+<div class="container">
+    
+    <div>
+        <img src="/assets/images/logoXTEC.jpg" class="img-fluid" alt="Chania" style="text-align:right">
+        </div>
+
+        <div class="card" style="text-align:center">
+                <div class="card-header">
+                    <h1 class="text-xs-center"  >EatOnTimeTEC </h1>
+                    <h3 class="text-xs-center" >Administradores</h3>
+                </div>
+                <div class="card-body" >
+                    <form>
+                        <div class="input-group form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre de usuario">
+                            
+                            
+                        </div>
+                        <p></p>
+                        <div class="input-group form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="password" class="form-control" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group" >
+                            <input type="submit" value="Registrarse" class="btn float-right login_btn">
+                        </div>
+                    </form>
+                </div>
+        </div>
+        
+        <h2 class="text" style="text-align:center">2019</h2>
+    
 </div>
-<form #loginForm= "ngForm"  class="col s12 white" (ngSubmit)="login(UserName.value,Password.value)">
-  <div class="row">
-    <div class="input-fiel col s12">
-      <input type="text" #UserName ngModel name="UserName" placeholder="UserName">
-    </div>
-  </div>
-  <div class="row">
-    <div class="input-fiel col s12">
-      <input type="Password" #Password ngModel name="Password" placeholder="Password">
-    </div>
-  </div>
-  <div class="row">
-    <div class="input-field col s12">
-      <button class="btn-large butn-submit" type="submit">Iniciar Sesion</button>
-    </div>
-  </div>
-</form>
+
+</body>
+</html>
