@@ -2,6 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule } from '@angular/router'; 
 
+
+import {BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -40,7 +44,10 @@ import { appRoutes } from './routes';
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes),
     NgxGaugeModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot(),
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent],
