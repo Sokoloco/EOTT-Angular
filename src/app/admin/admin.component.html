@@ -1,3 +1,36 @@
-<app-barra></app-barra>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light" style="border: black;">
+        
+    <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" href="#">Ver Usuarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ayuda</a>
+          </li>
+          <li class="nav-item">
+                <a class="nav-link" href="#" style="position:relative; left:1450px" >Cerrar sesión</a>
+              </li>
+
+        </ul>
+        <a class="navbar-brand" href="#">
+                <img width="90px" height="40px"src="assets/images/logoXTEC.jpg" style="position:relative; left:1450px">
+              </a>
+      </nav>
+</body>
+  
 <button class="btn-large butn-submit" (click) = "Logout()" >Cerrar Sesion</button>
 <router-outlet ></router-outlet>
