@@ -1,0 +1,25 @@
+body{
+    background-color: #6fa8dc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    }
+
+
+    .container1{
+        height: 300px;
+        width: 400px;
+        border: 1px solid #000;
+        background-color: white !important;
+        align-content: center;
+       
+        }
+
+        .container2{
+            height: 300px;
+            width: 500px;
+            border: 1px solid #000;
+            background-color: white !important;
+            align-content: center;
+        
+            }
