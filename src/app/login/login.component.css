@@ -1,0 +1,62 @@
+html,body{
+    background-image: url('https://thumbs.dreamstime.com/b/comida-bosquejos-de-iconos-57001011.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+    
+    .container{
+    height: 100%;
+    align-content: center;
+    }
+    
+    .card{
+    height: 350px;
+    width: 275px;
+    border: 1px solid #000;
+    background-color: #0E2464 !important;
+    align-content: center;
+    margin:  6em auto 2em;
+    }
+    
+    
+    
+    
+    .card-header {
+    color: rgb(255, 255, 255);
+    margin:  1em auto 1em;
+    }
+    
+    
+    
+    input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+    
+    }
+    
+    
+    .login_btn{
+    color: rgb(255, 255, 255);
+    background-color: #3368FF;
+    width: 175px;
+    height: 50px;
+    margin:  4em auto 1em;
+    }
+    
+    .login_btn:hover{
+    color: black;
+    background-color: white;
+    }
+    
+    .input-group-prepend span{
+        width: 90px;
+        background-color: #FFC312;
+        color: black;
+        border:0 !important;
+        }
+    
+    .form-control{
+        height: 30px; 
+    }
