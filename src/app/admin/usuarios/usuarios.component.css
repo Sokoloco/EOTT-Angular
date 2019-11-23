@@ -1,0 +1,25 @@
+.input-group.md-form.form-sm.form-1 input{
+    border: 1px solid #bdbdbd;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 10px;
+    }
+
+
+body{
+    background-color: #6fa8dc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    }
+
+.container{
+    height: 500px;
+    width: 1300px;
+    border: 1px solid #000;
+    background-color: white !important;
+    align-content: center;
+    margin-top: 90px;
+    }
