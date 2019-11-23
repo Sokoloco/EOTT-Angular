@@ -15,4 +15,8 @@ export class AdminService {
    getquejas(name) {
      return this.httpClient.get(this.rootURL+'/api/admi/getquejas?nombre='+name);
    }
+
+   getusuario(id){
+    return this.httpClient.get(this.rootURL+'/api/admi/getusuario?id='+id);
+   }
 }
